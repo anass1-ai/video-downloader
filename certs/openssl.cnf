@@ -1,0 +1,15 @@
+# Minimal openssl.cnf for creating a self-signed cert
+[req]
+default_bits        = 2048
+default_md          = sha256
+prompt              = no
+encrypt_key         = no
+distinguished_name  = dn
+
+[dn]
+C = US
+ST = Some-State
+L = City
+O = MyCompany
+OU = Dev
+CN = localhost
